@@ -1,207 +1,165 @@
 ---
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Global Founders</title>
-  </head>
+<Layout>
 
-  <body class="bg-black text-white font-sans">
+<section class="min-h-screen bg-black text-white">
 
-    <!-- Navbar -->
-    <nav class="flex justify-between items-center px-10 py-6 border-b border-zinc-800">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-10 py-6 border-b border-zinc-800">
 
-      <h1 class="text-3xl font-bold">
-        Global Founders
-      </h1>
+    <h1 class="text-3xl font-bold">
+      Global Founders
+    </h1>
 
-      <div class="flex gap-8 text-gray-300">
-        <a href="#">Home</a>
-        <a href="#">Founders</a>
-        <a href="#">Articles</a>
-        <a href="#">AI</a>
-        <a href="#">Contact</a>
-      </div>
+    <div class="flex gap-8 text-zinc-300">
+      <a href="#">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">Interviews</a>
+      <a href="#">About</a>
+    </div>
 
-    </nav>
+  </nav>
 
-    <!-- Hero Section -->
+  <!-- Hero -->
+  <section class="text-center py-32 px-6">
 
-    <section class="text-center py-32 px-6">
+    <p class="uppercase tracking-[0.3em] text-zinc-500 mb-6">
+      Future of Business & Innovation
+    </p>
 
-      <p class="text-zinc-400 uppercase tracking-[6px] mb-6">
-        Future of Business & Innovation
+    <h1 class="text-7xl font-bold max-w-5xl mx-auto leading-tight">
+      Stories Behind The World’s Greatest Founders
+    </h1>
+
+    <p class="text-zinc-400 text-xl mt-8 max-w-3xl mx-auto">
+      Discover entrepreneurs, startups, AI innovation,
+      and the minds shaping tomorrow.
+    </p>
+
+    <div class="flex justify-center gap-6 mt-12">
+
+      <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+        Explore Founders
+      </button>
+
+      <button class="border border-zinc-700 px-8 py-4 rounded-full hover:bg-zinc-900 transition">
+        Read Articles
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Cards -->
+  <section class="grid md:grid-cols-3 gap-8 px-10 pb-28">
+
+    <div class="bg-zinc-900 rounded-3xl p-8 hover:-translate-y-2 transition">
+      <p class="text-zinc-500 mb-4">FEATURED</p>
+
+      <h2 class="text-4xl font-bold mb-6">
+        Startup Growth
+      </h2>
+
+      <p class="text-zinc-400 leading-8">
+        Learn how modern startups scale globally using technology and AI.
       </p>
+    </div>
 
-      <h1 class="text-7xl font-bold leading-tight max-w-5xl mx-auto">
-        Stories Behind The World’s Greatest Founders
-      </h1>
+    <div class="bg-zinc-900 rounded-3xl p-8 hover:-translate-y-2 transition">
+      <p class="text-zinc-500 mb-4">INTERVIEWS</p>
 
-      <p class="text-zinc-400 text-xl mt-8 max-w-2xl mx-auto">
-        Discover entrepreneurs, startups, AI innovation, and the minds shaping tomorrow.
+      <h2 class="text-4xl font-bold mb-6">
+        CEO Interviews
+      </h2>
+
+      <p class="text-zinc-400 leading-8">
+        Insights from founders, executives, and industry leaders.
       </p>
+    </div>
 
-      <div class="flex justify-center gap-6 mt-12">
+    <div class="bg-zinc-900 rounded-3xl p-8 hover:-translate-y-2 transition">
+      <p class="text-zinc-500 mb-4">AI & TECH</p>
 
-        <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
-          Explore Founders
-        </button>
+      <h2 class="text-4xl font-bold mb-6">
+        AI Revolution
+      </h2>
 
-        <button class="border border-zinc-700 px-8 py-4 rounded-full hover:bg-zinc-900 transition">
-          Read Articles
-        </button>
+      <p class="text-zinc-400 leading-8">
+        Explore how artificial intelligence is transforming industries worldwide.
+      </p>
+    </div>
 
-      </div>
+  </section>
 
-    </section>
+</section>
+<section class="px-10 py-24">
 
-    <!-- Feature Cards -->
+  <div class="mb-16">
+    <p class="uppercase tracking-[0.3em] text-zinc-500 text-sm">
+      Featured Founders
+    </p>
 
-    <section class="grid md:grid-cols-3 gap-8 px-10 pb-24">
+    <h2 class="text-5xl font-bold mt-4">
+      Visionaries Changing The Future
+    </h2>
+  </div>
 
-      <div class="bg-zinc-900 p-8 rounded-3xl hover:-translate-y-2 transition">
+  <div class="grid md:grid-cols-3 gap-8">
 
-        <p class="text-zinc-500 mb-4">
-          FEATURED
-        </p>
+    <div class="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+        class="w-full h-80 object-cover"
+      />
 
-        <h2 class="text-3xl font-bold mb-4">
-          Startup Growth
-        </h2>
-
-        <p class="text-zinc-400">
-          Learn how modern startups scale globally using technology and AI.
-        </p>
-
-      </div>
-
-      <div class="bg-zinc-900 p-8 rounded-3xl hover:-translate-y-2 transition">
-
-        <p class="text-zinc-500 mb-4">
-          INTERVIEWS
-        </p>
-
-        <h2 class="text-3xl font-bold mb-4">
-          CEO Interviews
-        </h2>
+      <div class="p-6">
+        <h3 class="text-3xl font-bold mb-2">
+          Sundar Pichai
+        </h3>
 
         <p class="text-zinc-400">
-          Insights from founders, executives, and industry leaders.
+          CEO of Google
         </p>
-
       </div>
+    </div>
 
-      <div class="bg-zinc-900 p-8 rounded-3xl hover:-translate-y-2 transition">
+    <div class="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+        class="w-full h-80 object-cover"
+      />
 
-        <p class="text-zinc-500 mb-4">
-          AI & TECH
-        </p>
-
-        <h2 class="text-3xl font-bold mb-4">
-          AI Revolution
-        </h2>
+      <div class="p-6">
+        <h3 class="text-3xl font-bold mb-2">
+          Elon Musk
+        </h3>
 
         <p class="text-zinc-400">
-          Explore how artificial intelligence is transforming industries worldwide.
+          Founder of Tesla & SpaceX
         </p>
-
       </div>
+    </div>
 
-    </section>
+    <div class="bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+        class="w-full h-80 object-cover"
+      />
 
-    <!-- Featured Founders -->
+      <div class="p-6">
+        <h3 class="text-3xl font-bold mb-2">
+          Satya Nadella
+        </h3>
 
-    <section class="px-10 pb-28">
-
-      <div class="flex justify-between items-center mb-10">
-
-        <h2 class="text-5xl font-bold">
-          Featured Founders
-        </h2>
-
-        <p class="text-zinc-500">
-          Visionaries changing the future
+        <p class="text-zinc-400">
+          CEO of Microsoft
         </p>
-
       </div>
+    </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+  </div>
 
-        <!-- Elon -->
-
-        <div class="bg-zinc-900 rounded-3xl overflow-hidden hover:scale-[1.02] transition">
-
-          <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200"
-            class="w-full h-72 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-3xl font-bold mb-2">
-              Elon Musk
-            </h3>
-
-            <p class="text-zinc-400">
-              CEO of Tesla & SpaceX
-            </p>
-
-          </div>
-
-        </div>
-
-        <!-- Sam Altman -->
-
-        <div class="bg-zinc-900 rounded-3xl overflow-hidden hover:scale-[1.02] transition">
-
-          <img
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200"
-            class="w-full h-72 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-3xl font-bold mb-2">
-              Sam Altman
-            </h3>
-
-            <p class="text-zinc-400">
-              CEO of OpenAI
-            </p>
-
-          </div>
-
-        </div>
-
-        <!-- Sundar -->
-
-        <div class="bg-zinc-900 rounded-3xl overflow-hidden hover:scale-[1.02] transition">
-
-          <img
-            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200"
-            class="w-full h-72 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-3xl font-bold mb-2">
-              Sundar Pichai
-            </h3>
-
-            <p class="text-zinc-400">
-              CEO of Google
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </body>
-
-</html>
+</section>
+</Layout>
